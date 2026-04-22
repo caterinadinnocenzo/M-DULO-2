@@ -1,0 +1,81 @@
+---
+output:
+  html_document: default
+  pdf_document: default
+---
+------------------------------------------------------------------------
+
+title: "Algoritmos" author: "Pilar Mujica" date: "`r Sys.Date()`" output: html_document
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+##Primeros Comandos de R##
+
+Así se cargan variables en R
+
+```{r}
+a=38
+a=40
+b=60
+c=b-a
+c
+```
+
+## Uso de datasets o base de datos internos de R
+
+Usando el comando el comando data en la consola obtenemos distintos datos ya cargados en la base de datos de R, estos datos están dados en tablas de ñlas cuales podemos elegir columnas específicas. Si escribimos \$ después del comando de información específico. \# R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure}
+plot(pressure,type="s",main="presión del gas ideal",ylab="hPa",xlab="K")
+```
+
+## Comando Plot
+
+Es un comando que permite graficar cualquier fuente de datos que le asignemos, teniendo también la posibiidad de asignar  nombre a las variables o hacer cambios al gráfico. En caso de duda de como utilizar el comando plot podemos escribir (en la consola) ?plot, así luego en la pestaña help podemos ver los argumentos que corresponden a cada opción (como nombrar los ejes o ponerle título al gráfico)
+
+## Funciones Estadísticas
+
+```{r}
+z1<-rnorm(350,22,5)
+z1
+```
+
+```{r}
+plot(z1)
+w1<-length(z1)
+w1
+x1<-(500:849)
+x1
+plot(z1,x1)
+```
+
+```{r}
+hist(z1, main="histograma de edades",breaks=50)
+
+```
+
+```{r}
+density(z1)
+```
+
+```{r}
+plot(density(z1))
+```
+
+
+```
+
